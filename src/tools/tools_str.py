@@ -6,13 +6,13 @@ import random
 
 
 #Generates a string  with random characters from one already supplied and with the specified length.
-def rannewstr(str_lenth:int,characters:str):
+def rannewstr(str_length:int,characters:str):
     le:str = len(characters)
     new_str:str = ''
     ctr:chr = ''
     i:int = 0
-
-    while(i < str_lenth):
+    
+    while(i < str_length):
         i = i + 1
         ctr = characters[random.randint(0,le - 1)]   
         new_str += ctr
